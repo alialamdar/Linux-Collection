@@ -142,3 +142,43 @@ sudo usermod -G root user_name => add user_name user to the group root
 sudo usermod -L user_name => Lock the user_name user
 
 sudo usermod -U user_name => Unlock the user_name user
+
+ls -ltrh => show the list of the files in current diractory, additional their owners and groups
+
+sudo chown owner_name file_name => change the owner of the file_name file to owner_name owner
+
+sudo chgrp group_name file_name => change the group of the file_name file to group_name group
+
+sudo chmod permision_number file_name => give the permision_number permision to the file_name (permision_number is a linux permision number, for exapmle 770)
+
+ifconfig => show the interfaces of network cards and their IPs
+
+ifconfig => show the interfaces of network cards and their IPs (show the disables too)
+
+ifdown network_card_name => disable network_card_name network card
+
+ifup network_card_name => enable network_card_name network card
+
+sudo ifconfig network_card_name new_ip_address netmask netmask_number => cahnge the ip address of network_card_name to new_ip_address, with netmask_number netmask
+
+sudo apt-get install gcc => update the kernel tools
+
+mv diractory_name .diractory_name => hide diractory_name diractory
+
+mv .diractory_name diractory_name => unhide .diractory_name diractory
+
+uniq -c file_name => show the file_name numbers with their repeated number
+
+uniq -d file_name => show the file_name repeated numbers
+
+uniq -D file_name => show the file_name repeated numbers and their repeated
+
+uniq -u file_name => show the file_name numbers without repeated numbers
+
+uniq -u file_name > file_name => show the file_name numbers without repeated numbers and move them to the file_name
+
+diff file_name file_name => show the differences between tow file
+
+finger user_name => show the loggin information about user_name user
+
+w => show the information about all users in system
