@@ -1,3 +1,6 @@
+
+https://github.com/alialamdar
+
 pwd => print current diractory
 
 cd .. => go back from the current diractory
@@ -59,3 +62,83 @@ find . -mmin -120 => find all the file that changed in 120 minute ago
 find / -mtime -2 => find all the file that changed in 2 days ago
 
 history => show the lastes commands that used in terminal by user
+
+less txt_file => show the content of the txt file and then you can enter /expected_word for see where and how many expected_word, repeated inthe text_file
+
+echo $variable => show the value of variable (you can define a variable in linux like programming languages)
+
+unset variable => unset the value of variable
+
+sudo apt-get install software_name => install software_name software
+
+sudo apt-get remove software_name => remove software_name software
+
+sudo apt-get upgrade => upgrade repository
+
+head -5 /etc/passwd => show the first 5 lines from passwd in etc
+
+tail -10 /etc/passwd => show the last 5 lines from passwd in etc
+
+head -5 /etc/passwd | tail -2 => show the last 2 lines from the first 5 lines from passwd in etc
+
+grep 'word_name' txt_file => see where and how many word_name, repeated in the text_file (case sensetive)
+
+grep -i 'word_name' txt_file => see where and how many word_name, repeated in the text_file (not case sensetive)
+
+grep -in 'word_name' txt_file => see where and how many in wich lines word_name, repeated in the text_file (not case sensetive)
+
+grep -ir 'word_name' ./* => see in wich files in current diractory, where and how many word_name, repeated
+
+sort -n file_name => sort the numbers in the file_name
+
+wc -l file_name => show the number of the lines in file_name
+
+wc -w file_name => show the number of the wordes in file_name
+
+wc -c file_name => show the size of the file_name (bite)
+
+zip file_name.zip file_name => get a copy of file_name and zip the copy
+
+unzip file_name.zip => get a copy of file_name.zip and unzip the copy
+
+gzip file_name => zip file_name
+
+gzip -d file_name.gz => unzip file_name.gz
+
+cd / => go to the root
+
+cat /etc/group => show the groups content in system
+
+cat /etc/passwd => show the passwords in system
+
+sudo cat /etc/group => show the hex passwords content in system
+
+sudo useradd user_name => add a new user_name user to the /etc/passwd
+
+sudo useradd -m user_name => add a new user_name user to the /etc/passwd and make a diractory for that user
+
+sudo useradd user_name -e 10-10-2025 => add a new user_name user to the /etc/passwd with expire date 10-10-2025
+
+sudo useradd user_name -g root => add a new user_name user to the /etc/passwd in group root
+
+sudo passwd user_name => set a password for user_name user
+
+sudo passwd -d user_name => delete user_name user password
+
+sudo userdel user_name => delete user_name user from /etc/passwd
+
+id => show the uid, gid and .. for the current user
+
+sudo groupadd group_name => add group_name group
+
+sudo groupdel group_name => delete group_name group
+
+sudo groupadd -g800 group_name => add group_name group with gid 800
+
+sudo groupmod -n new_group_name group_name => change the name of group group_name to new_group_name
+
+sudo usermod -G root user_name => add user_name user to the group root
+
+sudo usermod -L user_name => Lock the user_name user
+
+sudo usermod -U user_name => Unlock the user_name user
